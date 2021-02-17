@@ -11,5 +11,10 @@ class LinkedList {
   }
     
   // item can be inserted at the end
+    // create a new node item
+    // check to see if the list is empty, insert a new item if so
+    // start and the beginning until you reach the end of the list
+    // set teh end node's next point to a new node of null
+    
   // item can be inserted in the middle
 }
