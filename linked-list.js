@@ -9,12 +9,23 @@ class LinkedList {
     // create a new node item and point the head to that new code
     this.head = new _Node(item, this.head);
   }
-    
+
   // item can be inserted at the end
-    // create a new node item
+  insertLast(item) {
     // check to see if the list is empty, insert a new item if so
-    // start and the beginning until you reach the end of the list
-    // set teh end node's next point to a new node of null
-    
+    if (this.head === null) {
+      this.insertFirst(item);
+    } else {
+      let tempNode = this.head;
+      // start and the beginning until you reach the end of the list
+      while (tempNode.next !== null) {
+        tempNode = tempNode.next;
+      }
+      // set the end node's next point to a new node of null
+      tempNode.next = new _Node(item, null);
+    }
+  }
+  
+
   // item can be inserted in the middle
 }
