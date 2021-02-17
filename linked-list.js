@@ -49,4 +49,8 @@ class LinkedList {
     // Found it when currNode.value === item
     return currNode;
   }
+
+  // node can be deleted from the beginning of the list
+  // node can be delete from the end of the list
+  // node can be delete from between two other node
 }
